@@ -25,7 +25,7 @@ public class App {
 //        for (int i =0 ; i<cities.length; i = i+2){
 //            System.out.println(cities[i]);
 //        }
-
+//Exercise 3
         Float[] numbers = new Float[]{1.25F, 3.0F, 4.5F, 5.7F};
 //        float sum1 = numbers[0] + numbers[1] + numbers[2] + numbers[3];
 //        System.out.println("Suma1: "+sum1);
@@ -40,29 +40,36 @@ public class App {
 //        System.out.println(ave);
 //    }
 
-    //task 4
-    String[] names = new String[]{"Adam", "Kuba", "Jan", "Kuba", "Jan", "Jan"};
-    Integer counterJan = 0;
-    Integer counterAdam = 0;
-    Integer counterKuba = 0;
+        //Exercise 4
+//    String[] names = new String[]{"Adam", "Kuba", "Jan", "Kuba", "Jan", "Jan"};
+//    Integer counterJan = 0;
+//    Integer counterAdam = 0;
+//    Integer counterKuba = 0;
+//
+//
+//        for( Integer i = 0 ; i<names.length; i++){
+//        if (names[i]=="Jan"){
+//            counterJan ++;
+//        }else if (names[i]=="Adam"){
+//                counterAdam ++;
+//            }
+//        else {
+//            counterKuba++;
+//        }
+//
+//    }
+//        System.out.println("Kuba: " +counterKuba);
+//        System.out.println("Adam: " +counterAdam);
+//        System.out.println("Jan: " +counterJan);
 
+        //Exercise 5
 
-        for( Integer i = 0 ; i<names.length; i++){
-        if (names[i]=="Jan"){
-            counterJan ++;
-        }else if (names[i]=="Adam"){
-                counterAdam ++;
+        String[] names = new String[]{"Adam", "Kuba", "Jan", "Zdzichu"};
+        for (int i = 0; i < names.length; i++) {
+            if (names[i] == "Jan") {
+                System.out.println("index Jan: " + i);
             }
-        else {
-            counterKuba++;
         }
-
-    }
-        System.out.println("Kuba: " +counterKuba);
-        System.out.println("Adam: " +counterAdam);
-        System.out.println("Jan: " +counterJan);
-
-
 
     }
 
