@@ -20,6 +20,10 @@ public class App
         for (String city : cities) {
             System.out.println(city);
         }
+
+        for (int i=3; i>=0 ; i--){
+            System.out.println(cities[i]);
+        }
     }
 
 }
