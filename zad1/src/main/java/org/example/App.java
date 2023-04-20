@@ -64,12 +64,29 @@ public class App {
 
         //Exercise 5
 
-        String[] names = new String[]{"Adam", "Kuba", "Jan", "Zdzichu"};
-        for (int i = 0; i < names.length; i++) {
-            if (names[i] == "Jan") {
-                System.out.println("index Jan: " + i);
+//        String[] names = new String[]{"Adam", "Kuba", "Jan", "Zdzichu"};
+//        for (int i = 0; i < names.length; i++) {
+//            if (names[i] == "Jan") {
+//                System.out.println("index Jan: " + i);
+//            }
+//        }
+
+        //exercise 6
+
+        Integer[] someNumbers = new Integer[]{1, 14, -2, 0, 6};
+        Integer max = someNumbers[0];
+        Integer min = someNumbers[0];
+
+        for (Integer i = 0; i<someNumbers.length; i++){
+            if(someNumbers[i]>max){
+                max = someNumbers[i];
+            } else if (someNumbers[i]<min){
+                min = someNumbers[i];
             }
         }
+        System.out.println("minimum value: "+ min);
+        System.out.println("minimum value: "+ max);
+
 
     }
 
