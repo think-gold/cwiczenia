@@ -5,7 +5,7 @@ package org.example;
  *
  */
 public class App
-    
+
 {
     public static void main( String[] args ) {
 
@@ -22,6 +22,10 @@ public class App
         }
 
         for (int i=3; i>=0 ; i--){
+            System.out.println(cities[i]);
+        }
+
+        for (int i =0 ; i<cities.length; i = i+2){
             System.out.println(cities[i]);
         }
     }
