@@ -31,9 +31,11 @@ public class App {
         Float[] numbers = new Float[]{1.25F, 3.0F, 4.5F, 5.7F};
 
         float sum = 0;
+
         for (int i = 0; i < numbers.length; i++) {
             sum = sum + numbers[i];
         }
+
         System.out.println("Sum: " + sum);
 
         float ave = sum / numbers.length;
@@ -42,32 +44,25 @@ public class App {
 
         //Exercise 4
         String[] names = new String[]{"Adam", "Kuba", "Jan", "Kuba", "Jan", "Jan"};
-        Integer counterJan = 0;
-        Integer counterAdam = 0;
-        Integer counterKuba = 0;
-
+        String serachedName = "Jan";
+        Integer counter = 0;
 
         for (Integer i = 0; i < names.length; i++) {
-            if (names[i] == "Jan") {
-                counterJan++;
-            } else if (names[i] == "Adam") {
-                counterAdam++;
-            } else {
-                counterKuba++;
+            if (names[i] == serachedName) {
+                counter++;
             }
-
         }
-        System.out.println("Kuba: " + counterKuba);
-        System.out.println("Adam: " + counterAdam);
-        System.out.println("Jan: " + counterJan);
+
+        System.out.println("Jan: " + counter);
 
         //Exercise 5
 
         String[] namesRandom = new String[]{"Adam", "Kuba", "Jan", "Zdzichu"};
+        String searchedName2 = "Jan";
 
         for (int i = 0; i < namesRandom.length; i++) {
-            if (namesRandom[i] == "Jan") {
-                System.out.println("index Jan: " + i);
+            if (namesRandom[i] == searchedName2) {
+                System.out.println("Index Jan: " + i);
             }
         }
 
@@ -75,8 +70,8 @@ public class App {
 
         Integer[] someNumbers = new Integer[]{1, 14, -2, 0, 6};
 
-        Integer max = someNumbers[0];
-        Integer min = someNumbers[0];
+        Integer max = Integer.MIN_VALUE;
+        Integer min = Integer.MAX_VALUE;
 
         for (Integer i = 0; i < someNumbers.length; i++) {
             if (someNumbers[i] > max) {
@@ -85,7 +80,9 @@ public class App {
                 min = someNumbers[i];
             }
         }
+
         System.out.println("Minimum value: " + min);
         System.out.println("Maximum value: " + max);
     }
 }
+
